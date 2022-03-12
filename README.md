@@ -1,2 +1,2 @@
 # MandelBulb
-MandelBulb visualisation using p5
+MandelBulb visualisation using Processing
