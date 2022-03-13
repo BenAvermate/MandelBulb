@@ -1,15 +1,18 @@
+//TODO find more elegant solution for threading
+//TODO render using different methods like fot example raymarching => shaders
+//TODO colored points based on? distance?
 import peasy.*;
 
 PeasyCam cam;
 
-int DIM = 64;
-int n = 8; //order of the mandelbrot set
+int DIM = 128;
+int n = 32; //order of the mandelbrot set
 int t = 4; //amount of threads
 ArrayList<PVector> mandelbulb = new ArrayList<PVector>();;
 ArrayList<ArrayList> mandelbulbParts = new ArrayList<ArrayList>(4);
 
 
-int part = 0; //TODO find more elegant solution for threading
+int part = 0; 
 int threads = 0;
 
 void setup() {

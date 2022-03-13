@@ -21,8 +21,8 @@ public class MandelBulb extends PApplet {
 
 PeasyCam cam;
 
-int DIM = 64;
-int n = 8; //order of the mandelbrot set
+int DIM = 128;
+int n = 32; //order of the mandelbrot set
 int t = 4; //amount of threads
 ArrayList<PVector> mandelbulb = new ArrayList<PVector>();;
 ArrayList<ArrayList> mandelbulbParts = new ArrayList<ArrayList>(4);
@@ -35,7 +35,7 @@ int threads = 0;
     /* size commented out by preprocessor */;
     windowMove(1600,100); //move window to side of screen
     cam = new PeasyCam(this,250); //number is distance away for camera at start
-    System.out.println("startting " + t + "threads\n==================================");
+    System.out.println("startting " + t + " threads\n==================================");
 }
 
  public void calculate() {
